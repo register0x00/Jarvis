@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Как пользоваться Джарвисом?</title>
+    <style>
+        .wrapper {
+            max-width: 1000px;
+            min-width: 280px;
+            margin: 0 auto;
+            padding: 50px 30px;
+        }
+		body {
+		background-color: #050505;
+		margin: 0;
+		color: #39ff14;
+		font-family: monospace, Consolas, 'Courier new', monospace;
+		}
+        #header {
+            font-size: 32px;
+            font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+            margin-bottom: 12px;
+            color: #39ff14;
+        }
+        #header + div {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+#photo {
+    border: 1px solid #222;        /* тёмно‑серая рамка вместо серой */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;        /* тёмная плашка под фото */
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(57, 255, 20, 0.15); /* лёгкое свечение */
+}
+
+#text {
+    line-height: 1.7;
+    color: #e0e0e0;                /* светло‑серый для основного текста — лучше читается на чёрном */
+}
+
+#text strong {
+    color: #39ff14;                /* акценты остаются твоими */
+}
+
+code {
+    background: #000;
+    border: 1px solid #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #ff9d00;               /* команды — оранжевым, чтобы выделялись */
+}
+
+#footer {
+    margin-top: 40px;
+    font-style: italic;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main">
+            <div id="header">Здравствуй, пользователь!</div>
+            <div id="photo">Здесь будет фото Джарвиса</div>
+            <div id="text">
+                <p><strong>Что умеет Джарвис:</strong></p>
+                <ul>
+                    <li>Чтобы поздороваться: напишите <code>привет</code>, <code>дарова</code> или <code>здравствуй</code>.</li>
+                    <li>Чтобы что-то найти в интернете: напишите <code>вбей</code> или <code>найди</code>, а дальше через пробел свой запрос.</li>
+                    <li>Чтобы запустить приложение: напишите <code>запусти</code> или <code>открой</code>, затем укажи путь к приложению.</li>
+                    <li>Чтобы попрощаться: напишите <code>пока</code>, <code>эль пси конгру</code> или <code>до свидания</code>.</li>
+                    <li>Чтобы поставить напоминание: напишите время (часы и минуты слитно), а затем текст напоминания.</li>
+					<li>Чтобы добавить новое слово: найдите в папке Джарвиса или добавьте текстовый файл <code>triggers.txt</code>, если хотите добавить новые слова пишите туда, например <code>тест!привет</code>
+					    первое слово до восклицаетльного знака - триггер, после восклицательного - ключ, знак ! - разделитель. </li>
+                </ul>
+                <p><em>В будущем планируется:</em></p>
+                <ul>
+                    <li>Добавление новых функций и запоминание путей до приложения.</li>
+                    <li>Добавление напоминаний в разговоре (не только текстом).</li>
+                    <li>Эмоциональный интеллект и анализ вежливости.</li>
+                </ul>
+                <p>Если пользователь не проявляет активность в течение 2 минут, текстовый помощник завершит работу (это реализовано в коде C++ программы, а не на этой странице).</p>
+            </div>
+            <div id="footer">Надеемся, что Джарвис принесёт только счастье!</div>
+        </div>
+    </div>
+</body>
+</html>
